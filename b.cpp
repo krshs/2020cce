@@ -1,5 +1,16 @@
-請照今天上課教的 GitHub 使用方法, 把你實習課的 8 題, 放上 GitHub
-
-作法: New 新的 repository 倉庫, 取個名字 2020cce, 記得裡面要有 README.md
-
-把它的 main 改名成 gh-pages
+#include <stdio.h>
+int main()
+{
+	int a[10],b=0;
+	for(int i=0;i<10;i++)
+	{
+		scanf("%d", &a[i]);
+		if(a[i]==0) break;
+		else b++;
+	}
+	for(int i=b-1;i>=0;i--)
+	{
+		printf("%d ",a[i]);
+	}
+	printf("\n");
+}
