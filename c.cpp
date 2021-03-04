@@ -1,5 +1,19 @@
-請照今天上課教的 GitHub 使用方法, 把你實習課的 8 題, 放上 GitHub
+#include <stdio.h>
+int MYPOWER(int a, int b)
+{
+	int ans=1;
+	for(int i=1;i<=b;i++)
+	{
+		ans*=a;
+		
+	}
+	return ans;
+}
 
-作法: New 新的 repository 倉庫, 取個名字 2020cce, 記得裡面要有 README.md
-
-把它的 main 改名成 gh-pages
+int main(void)
+{
+	int a,b;
+	scanf("%d%d",&a,&b);
+	printf("[%d]",MYPOWER(a,b));
+	return 0;
+}
